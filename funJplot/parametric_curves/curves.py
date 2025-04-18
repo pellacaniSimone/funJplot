@@ -61,7 +61,7 @@ class LorenzAttractor(ParametricCurve):
         super().__init__(frame_count, frame_duration_ms, plot_scale, rotations=1)
 
     def compute_points(self, t_parameter):
-        num_steps = self.frame_count
+        num_steps = self.n
         x_coords = np.zeros(num_steps)
         y_coords = np.zeros(num_steps)
         z_coords = np.zeros(num_steps)

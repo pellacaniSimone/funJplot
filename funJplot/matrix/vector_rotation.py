@@ -5,17 +5,10 @@ import plotly.graph_objects as go
 class VectorRotation(GeometricAnimation):
     """Specific implementation for animating a rotating 2D unit vector."""
 
-    def __init__(self, frame_count=100, frame_duration_ms=50, scale=1.2):
-        """
-        Initializer for the VectorRotation animation.
-
-        Args:
-            frame_count (int): Total animation frames.
-            frame_duration_ms (int): Duration per frame (ms).
-            scale (float): Scaling factor for plot axes.
-        """
-        super().__init__(frame_count, frame_duration_ms, scale)
-        self.rotation_angles = np.linspace(0, self.frame_count / 10.0, self.frame_count)
+    def __init__(self, frame_count:int=100, frame_duration_ms:int=50, scale:float=1.2):
+        """Initializer for the VectorRotation animation."""
+        super().__init__(frame_count, frame_duration_ms, scale) 
+        self.rotation_angles = np.linspace(0, self.n / 10.0, self.n)
         self.cosine_values = np.cos(self.rotation_angles)
         self.sine_values = np.sin(self.rotation_angles)
         self.gui = GuiInterface(self)
@@ -37,7 +30,7 @@ class VectorRotation(GeometricAnimation):
                                marker=dict(size=6))],
                 name=f"frame{i}"
             )
-            for i in range(self.frame_count)
+            for i in range(self.n)
         ]
         initial_figure.frames = animation_frames
 
@@ -64,3 +57,7 @@ class VectorRotation(GeometricAnimation):
             sliders=[self.gui.animation_slider]
         )
         return initial_figure 
+    
+
+
+    

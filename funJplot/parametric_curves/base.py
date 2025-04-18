@@ -39,7 +39,7 @@ class ParametricCurve(GeometricAnimation):
 
     def _create_figure(self):
         """Creates the Plotly figure and frames for the parametric curve animation."""
-        parameter_values = np.linspace(0, self.rotations * 2 * np.pi, self.frame_count)
+        parameter_values = np.linspace(0, self.rotations * 2 * np.pi, self.n)
         self.x_coordinates, self.y_coordinates = self.compute_points(parameter_values)
 
         if self.x_coordinates is None or self.y_coordinates is None:
@@ -60,7 +60,7 @@ class ParametricCurve(GeometricAnimation):
                                marker=dict(size=4))],
                 name=f"frame{i}"
             )
-            for i in range(1, self.frame_count)
+            for i in range(1, self.n)
         ]
         initial_figure.frames = animation_frames
 
