@@ -51,10 +51,10 @@ class VectorRotation(GeometricAnimation):
             height=600,
             updatemenus=[{
                 "type": "buttons",
-                "buttons": [self.gui.play_button, self.gui.pause_button],
+                "buttons": [self.gui.play, self.gui.pause],
                 "x": 0.1, "y": 0, "xanchor": "left", "yanchor": "bottom"
             }],
-            sliders=[self.gui.animation_slider]
+            sliders=[self.gui.slider]
         )
         return initial_figure 
     
