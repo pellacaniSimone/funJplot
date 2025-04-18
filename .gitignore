@@ -1,0 +1,10 @@
+*.out
+*.o
+__pycache__/
+.ropeproject/
+*.rx
+target/
+.venv/
+.ipynb_checkpoints/
+.virtual_documents/
+.vscode/
