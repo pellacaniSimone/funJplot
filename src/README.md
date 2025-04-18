@@ -145,7 +145,7 @@ pip install funjplot-${VERSION}-py3-none-any.whl
 ```
 
 Now you can push into your pipy:
-```
+```bash
 python3 -m twine upload  dist/*
 ```
 
