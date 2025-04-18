@@ -121,7 +121,7 @@ pip install --upgrade pip
 
 Add install software
 ```bash
-pip install -r requirements_build.txt
+pip install -r requirement_build.txt
 ```
 
 Create your `$HOME/.pypirc` file like below or something more customized
