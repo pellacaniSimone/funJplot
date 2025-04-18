@@ -3,30 +3,30 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "funJplot" # O il nome scelto
-version = "0.0.0.1" # Inizia con una versione bassa
+name = "funJplot"
+version = "0.0.0.1"
 authors = [
     { name="Simone Pellacani", email="pellacanisimone2017@gmail.com" },
 ]
 description = "A library for creating animated visualizations of mathematical curves and concepts using Plotly."
 readme = "README.md"
-requires-python = ">=3.11" # Specifica la versione minima di Python
+requires-python = ">=3.11"
 license = { file="LICENSE" }
 keywords = ["plotly", "animation", "math", "geometry", "visualization", "curves"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License", # Scegli la tua licenza
+    "License :: OSI Approved :: MIT License", 
     "Operating System :: OS Independent",
     "Intended Audience :: Education",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Visualization",
 ]
 dependencies = [
-    "numpy>=2.0.0", # Specifica le dipendenze
+    "numpy>=2.0.0",
     "plotly>=6.0.1",
     "jupyterlab>=4.4.0"
 ]
 
 [project.urls]
-Homepage = "https://github.com/pellacaniSimone/funJplot" # Link al repository (opzionale)
-Issues = "https://github.com/pellacaniSimone/funJplot/issues" # Link al tracker (opzionale)
+Homepage = "https://github.com/pellacaniSimone/funJplot" 
+Issues = "https://github.com/pellacaniSimone/funJplot/issues"
