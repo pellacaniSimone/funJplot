@@ -133,6 +133,7 @@ Create your `$HOME/.pypirc` file like below or something more customized
 
 Build your app
 ```bash
+cd src
 python3 -m build
 ```
 
