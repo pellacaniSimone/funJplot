@@ -74,7 +74,7 @@ from funJplot import Spiral
 import numpy as np
 
 # Create an instance of the spiral animation
-spiral_anim = Spiral(frame_count=300, frame_duration_ms=25, rotations=5, plot_scale=10, a=0, b=0.4)
+spiral_anim = Spiral(frame_count=300, frame_duration_ms=25, rotations=5, scale=10, a=0, b=0.4)
 
 # Show the animation
 spiral_anim.show()
@@ -86,7 +86,7 @@ spiral_anim.show()
 from funJplot import LorenzAttractor
 
 # Create an instance of the Lorenz attractor animation
-lorenz_anim = LorenzAttractor(frame_count=3000, frame_duration_ms=5, plot_scale=40, dt=0.01)
+lorenz_anim = LorenzAttractor(frame_count=3000, frame_duration_ms=5, scale=40, dt=0.01)
 
 # Show the animation
 lorenz_anim.show()

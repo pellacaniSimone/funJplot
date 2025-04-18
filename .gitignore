@@ -10,3 +10,4 @@ target/
 .vscode/
 dist/
 *.egg-info/
+notebooks/
