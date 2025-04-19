@@ -61,7 +61,20 @@ class VectorRotation(GeometricAnimation):
 
 
 class MathMul(GeometricAnimation):
-    def __init__(self, A, B, v=np.array([1, 1]), frame_count=100, duration=50, scale=1.5):
+    """2d example of matrix and vector multiplication
+
+    Args:
+        A (np.array): 2x2 Matrix left
+        B (np.array): 2x2 Matrix right
+        v (np.array): 2x1 vector
+
+        frame_count (int, optional): n animation frames Defaults to 100.
+        duration (int, optional): seconds time Defaults to 50.
+        scale (float, optional): image reference scaling Defaults to 1.5.
+        
+    """
+    def __init__(self, A, B, v, frame_count=100, duration=50, scale=1.5):
+
         super().__init__(frame_count, duration, scale)
         self.A = A
         self.B = B
@@ -69,7 +82,7 @@ class MathMul(GeometricAnimation):
         self.v = v
         self.gui = GuiInterface(self)
 
-        # interpolazioni tra v e Av, Bv, Cv
+        # interpolations v e Av, Bv, Cv
         self.vA = self.A @ self.v
         self.vB = self.B @ self.v
         self.vC = self.C @ self.v

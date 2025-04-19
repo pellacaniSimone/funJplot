@@ -5,7 +5,7 @@ from .parametric_curves import ParametricCurve, Spiral, Ellipse, Lissajous, Lore
 __all__ = [
     'GeometricAnimation',
     'GuiInterface',
-    'VectorRotation',
+    'VectorRotation', 'MathMul',
     'ParametricCurve',
     'Spiral',
     'Ellipse',
