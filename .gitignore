@@ -11,3 +11,5 @@ target/
 dist/
 *.egg-info/
 notebooks/
+data/
+examples/
