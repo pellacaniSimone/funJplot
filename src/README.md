@@ -29,7 +29,7 @@ This library is currently in the pre-alpha phase. This means that the API may un
 
 ## Installation
 
-You can install `funJplot` via pip (it might not be available on PyPI until your first release):
+You can install `funJplot` via pip:
 
 ```bash
 pip install funJplot
