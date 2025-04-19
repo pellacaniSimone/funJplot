@@ -20,6 +20,68 @@ This library is currently in the pre-alpha phase. This means that the API may un
 For having a test dataset, as example is tooked from sklearn that load dataset indipendetly from the csv
 
 
+
+
+## Short class diag
+```mermaid
+classDiagram
+    %% Abstract Base Class
+    class GeometricAnimation {
+        <<abstract>>
+        +__init__()*
+        #_create_figure()*
+        +show()
+    }
+    
+    %% GUI Manager (shown but minimized)
+    class GuiInterface {
+        <<hidden>>
+    }
+    
+    %% Parametric Curve Base
+    class ParametricCurve {
+        <<abstract>>
+        +__init__()
+        +compute_points()*
+        #_create_figure()
+    }
+    
+    %% Concrete Implementations
+    class VectorRotation {
+        #_create_figure()
+    }
+    
+    class Spiral {
+        +compute_points()
+    }
+    
+    class Ellipse {
+        +compute_points()
+    }
+    
+    class Lissajous {
+        +compute_points()
+    }
+    
+    class LorenzAttractor {
+        +compute_points()
+    }
+    
+    %% Inheritance Relationships
+    GeometricAnimation <|-- ParametricCurve
+    GeometricAnimation <|-- VectorRotation
+    ParametricCurve <|-- Spiral
+    ParametricCurve <|-- Ellipse
+    ParametricCurve <|-- Lissajous
+    ParametricCurve <|-- LorenzAttractor
+    
+    %% Composition (simplified)
+    GeometricAnimation *-- GuiInterface
+
+```
+
+
+
 ## Class Diag
 
 
