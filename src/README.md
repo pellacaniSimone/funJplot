@@ -7,7 +7,7 @@
 
 [![PyPI version](https://badge.fury.io/py/funJplot.svg)](https://pypi.org/project/funJplot/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![GitHub Stars](https://img.shields.io/github/stars/IlTuoUsername/funJplot?style=social)
+![GitHub Stars](https://img.shields.io/github/stars/pellacaniSimone/funJplot?style=social)
 
 **funJplot** is a lightweight and simple Python library, specifically designed for creating animations in Jupyter notebooks using NumPy arrays. The main goal is to provide an intuitive tool for learning and visualizing concepts related to mathematical algebra, statistics, and related disciplines.
 
@@ -159,4 +159,4 @@ We are open to contributions and feedback\! If you have ideas, suggestions, or h
 This project is released under the [MIT](https://www.google.com/search?q=LICENSE) license.
 
 
-## Thanks to LLM to write some part of code and documentation for this initial version
+##### Thanks to LLM to write some part of code and documentation for this initial version
