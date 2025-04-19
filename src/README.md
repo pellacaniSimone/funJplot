@@ -33,7 +33,7 @@ You can install `funJplot` via pip:
 
 ```bash
 pip install funJplot
-````
+```
 
 If you installed from TestPyPI:
 
