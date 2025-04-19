@@ -1,3 +1,3 @@
-from .geometrics_transpose import VectorRotation
+from .geometrics_transpose import VectorRotation,MathMul
 
 __all__ = ['VectorRotation','MathMul']
