@@ -50,3 +50,6 @@ class GuiInterface:
             } for i in range(0, parent.n, 5)] # data dependance
         )
 
+
+
+
