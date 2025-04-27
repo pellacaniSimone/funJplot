@@ -1,4 +1,12 @@
 
+
+
+<p align="center">
+  <img src="assets/funJplot_logo.png" alt="funJplot logo" width="200"/>
+</p>
+
+---
+
 # funJplot
 
 [![PyPI version](https://badge.fury.io/py/funJplot.svg)](https://pypi.org/project/funJplot/)
